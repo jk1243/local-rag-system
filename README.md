@@ -10,10 +10,22 @@ Welcome to the **Local LLM-based Retrieval-Augmented Generation (RAG) System**! 
 - **Easy Integration with LLMs**: Leverage local LLMs for personalized, context-aware responses.
 
 ### 🚀 Get Started
-1. Clone the repo: `git clone https://github.com/JAMwithAI/build_your_local_RAG_system.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Configure `constants.py` for embedding models and OpenSearch settings.
-4. Run the Streamlit app: `streamlit run welcome.py`
+
+#### Quick Start (Automated)
+Run the interactive setup script:
+```bash
+./quickstart.sh
+```
+
+#### Manual Setup
+1. **Prerequisites**: Install [Docker](https://docs.docker.com/get-docker/), [Ollama](https://ollama.ai/download), and Python 3.11
+2. **OpenSearch**: Run `./setup_opensearch.sh` to start OpenSearch and Dashboard
+3. **Hybrid Search**: Run `./configure_hybrid_search.sh` to configure the search pipeline
+4. **Dependencies**: Install Python packages with `pip install -r requirements.txt`
+5. **LLM Model**: Pull an Ollama model: `ollama pull llama3.2:1b`
+6. **Launch**: Start the app with `streamlit run Welcome.py`
+
+📖 For detailed instructions, see [SETUP_GUIDE.md](SETUP_GUIDE.md)
 
 ### 📘 Blog Guide
 For a detailed walkthrough of the setup and code, check out our blog:
